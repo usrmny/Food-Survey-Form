@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+     <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey to evaluate which food is liked more by the population.</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name: <input required name="name" id="name" type="text" placeholder="Enter your name"> </label>
+
+      <label for="email" id="email-label">Email: <input required name="email" id="email" type="email" placeholder="Enter your email"> </label>
+
+      <label for="age" id="number-label">Age (optional): <input name="age" id="number" type="number" min="18" max="120" placeholder="Age"> </label>
+      
+      <br>
+
+      <label for="dropdown" id="dropdown-label">Between bread, rice and pasta, which one is your favorite?</label>
+
+      <select id="dropdown" name="dropdown">
+        <option value="">(Select an option)</option>
+        <option value="1">Bread</option>
+        <option value="2">Rice</option>
+        <option value="3">Pasta</option>
+      </select>
+
+      <br>
+      <br>
+
+      <fieldset>
+        <legend>Would you fight for it?</legend>
+          <label><input type="radio" id="yes-fight" name="fight" value="yes-fight" class="inline">I would</label>
+          <label><input type="radio" id="no-fight" name="fight" value="no-fight" class="inline" checked>I would not</label>
+      </fieldset>
+
+      <br>
+      
+      <label>What do you think are the qualities someone who would fight for their food choice would possess? (check all that apply):</label>
+        
+      <label for="determination">Determination<input type="checkbox" name="determination" id="determination" value="determination"></label>
+      <label for="loyalty">Loyalty<input type="checkbox" name="loyalty" id="loyalty" value="loyalty"></label>
+      <label for="kindness">Kindness<input type="checkbox" name="kindness" id="kindness" value="kindness"></label>
+      <label for="responsibility">Responsibility<input type="checkbox" name="responsibility" id="responsibility" value="responsibility"></label>
+      <label for="confidence">Confidence<input type="checkbox" name="confidence" id="confidence" value="confidence"></label>
+
+      <br>
+      
+      <label for="reason">Please explain your reasoning:</label>
+      <textarea id="reason" name="reason" rows="3" cols="30" placeholder="I believe..."></textarea>
+      <input id="submit" type="submit" value="Submit">
+      </form>
+  </body>
+</html>

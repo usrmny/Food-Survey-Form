@@ -1,0 +1,39 @@
+body {
+  background: #2b2d2d;
+  font-family: Tahoma; 
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+label, legend {
+  display: block;
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+label, legend, label, h1, p{
+  color: white;
+}
+
+textarea, select, input[type="text"], input[type="email"], input[type="number"], input[type="submit"]   {
+  margin: 10px 20px auto auto;
+  width: 100%;
+  min-height: 2em;
+  background-color: black;
+  color: white;
+}
